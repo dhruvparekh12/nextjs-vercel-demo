@@ -5,6 +5,18 @@
       "destination": "/blog"
     },
     {
+      "source": "rd/static10",
+      "destination": "blog"
+    },
+    {
+      "source": "rd/static20",
+      "destination": "/blog"
+    },
+    {
+      "source": "/rd/static30/",
+      "destination": "/blog"
+    },
+    {
       "source": "/rd/dynamic/:id",
       "destination": "/isr/:id",
       "statusCode": 302
