@@ -5,16 +5,9 @@
       "destination": "/blog"
     },
     {
-      "source": "rd/static10",
-      "destination": "blog"
-    },
-    {
-      "source": "rd/static20",
-      "destination": "/blog"
-    },
-    {
-      "source": "/rd/static30/",
-      "destination": "/blog"
+      "source": "/rd/wildcard/*",
+      "destination": "/api/*",
+      "statusCode": 301
     },
     {
       "source": "/rd/dynamic/:id",
