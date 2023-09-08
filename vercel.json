@@ -1,0 +1,49 @@
+{
+  "redirects": [
+    {
+      "source": "/rd/static",
+      "destination": "/blog"
+    },
+    {
+      "source": "/rd/dynamic/:id",
+      "destination": "/isr/:id",
+      "statusCode": 302
+    },
+    {
+      "source": "/rd/absolute/:id",
+      "destination": "https://jsonplaceholder.typicode.com/todos/:id",
+      "statusCode": 307
+    },
+    {
+      "source": "/rd/regex/:id(\\d+)",
+      "destination": "/isr/:id",
+      "statusCode": 301
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/rw/static",
+      "destination": "/blog"
+    },
+    {
+      "source": "rw/staticer",
+      "destination": "/blog"
+    },
+    {
+      "source": "/rw/staticslash/",
+      "destination": "/blog"
+    },
+    {
+      "source": "/rw/dynamic/:id",
+      "destination": "/isr/:id"
+    },
+    {
+      "source": "/rw/regex/:id(\\d+)",
+      "destination": "/isr/:id"
+    },
+    {
+      "source": "/rw/absolute/:id",
+      "destination": "https://jsonplaceholder.typicode.com/todos/:id"
+    }
+  ]
+}
